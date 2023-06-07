@@ -577,6 +577,7 @@ ion-icon:hover {
     #texto-principal {
         padding-top: 4%;
         padding-bottom: 4%;
+        margin-left: 7%;
         font-weight: 500;
         text-align: justify;
         text-justify: inter-word;
