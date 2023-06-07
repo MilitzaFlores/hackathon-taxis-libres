@@ -1,3 +1,4 @@
+// navbar
 var dropdownItems = document.querySelectorAll('.nav-item.dropdown');
 
 for (var i = 0; i < dropdownItems.length; i++) {

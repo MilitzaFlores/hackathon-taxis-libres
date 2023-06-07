@@ -313,6 +313,7 @@ ion-icon:hover {
 .vertical-line {
     height: 600px;
     border-left: 2px solid white;
+    margin-left: 60%;
 }
 
 .imagen-footer {
@@ -339,7 +340,204 @@ ion-icon:hover {
 /* media queries */
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
+    h3 {
+        font-size: 1.7rem;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 8%;
+        margin-top: 8%;
+    }
+
+    p {
+        padding-bottom: 3%;
+    }
+
+    .navbar-toggler {
+        background-color: var(--clr-Secundario);
+        margin-inline-end: 2%;
+        size: 35px;
+    }
+
+    .imagen-portada-responsive {
+        width: 100%;
+        height: 720px;
+        padding-top: 10%;
+    }
+
+    .banner-imagen {
+        width: 33%;
+        height: auto;
+        top: 48.5%;
+    }
+
+    .btn-lg-banner {
+        font-weight: 600;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+        transition: transform 0.3s;
+        color: var(--clr-Texto-Logo);
+        top: 69%;
+        left: 69%;
+        position: absolute;
+    }
+
+    .btn-lg-banner:hover {
+        color: var(--clr-Texto-Logo);
+        transform: scale(1.2);
+    }
+
+    .btn-lg {
+        font-weight: 600;
+        font-size: 1.7rem;
+        transition: color 0.3s;
+        transition: transform 0.3s;
+        margin-left: 30%;
+        margin-top: 6%;
+        color: var(--clr-Texto-Logo);
+    }
+
+    .btn-lg:hover {
+        color: var(--clr-Texto-Logo);
+        transform: scale(1.2);
+    }
+
+    #encabezado {
+        font-size: 5rem;
+    }
+
+    #texto-principal {
+        padding-bottom: 4%;
+        font-weight: 500;
+        text-align: justify;
+        text-justify: inter-word;
+        width: 85%;
+        margin-left: 7%;
+    }
+
+    .titulo-texto {
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-bottom: 8%;
+        text-align: center;
+        margin-left: 2%;
+    }
+
+    .vertical-line-texto {
+        height: 250px;
+        border-left: 4px solid #C1C936;
+    }
+
+    .grid-container-aspectos {
+        grid-template-columns: repeat(1, 2fr);
+        justify-content: center;
+    }
+
+    .imagen-aspectos {
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-container-tarjetas {
+        grid-template-columns: repeat(1, 3fr);
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        gap: 3%;
+        margin-top: 5%;
+        margin-bottom: 13%;
+    }
+
+    .card-text {
+        padding-top: 5%;
+        padding-bottom: 8%;
+        padding-right: 3%;
+        padding-left: 3%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .tarjetas-fondo {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 4fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        width: 100%;
+        padding-top: 8%;
+        padding-bottom: 11%;
+    }
+
+    .grid-container img {
+        width: 100%;
+        border-radius: 15%;
+    }
+
+    .container {
+        background-color: var(--clr-Fondo);
+        width: 100%;
+        text-align: justify;
+    }
+
+    .container-texto {
+        margin-left: 5%;
+        gap: 2%;
+        display: flex;
+    }
+
+    .container-footer-final {
+        background-color: var(--clr-Texto-Logo);
+        text-align: center;
+        align-content: center;
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .texto-footer-responsive {
+        padding-bottom: 6%;
+    }
+
+    .texto-footer {
+        color: var(--clr-Texto-Logo);
+        font-weight: 600;
+        font-size: 1.7rem;
+        text-align: left;
+    }
+
+    .vertical-line {
+        height: 1px;
+        border-left: 2px solid white;
+        visibility: hidden;
+    }
+
+    .imagen-footer {
+        width: 80%;
+        height: 100%;
+    }
+
+    .footer-brand {
+        width: 100%;
+        height: 80%;
+        margin-left: 5%;
+    }
+
+    .footer-responsive-text {
+        text-align: center;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .redes-sociales {
+        text-align: center;
+        justify-content: center;
+        margin-left: 5%;
+        margin-bottom: 8%;
+    }
 }
+
 /* Celular */
 @media (min-width: 350px) and (max-width: 767.98px) {
     h3 {
@@ -350,36 +548,30 @@ ion-icon:hover {
         margin-top: 8%;
     }
 
-    p {
-        width: 100%;
-    }
-
     .navbar-toggler {
         background-color: var(--clr-Secundario);
         margin-inline-end: 2%;
         size: 35px;
     }
 
-    .imagen-portada-responsive {
-        width: 121.5%;
-        height: 500px;
-        padding-top: 14.5%;
-    }
-
-    .banner-imagen {
-        width: 41%;
-        height: auto;
-        top: 25.8%;
-        margin-left: 10.5%;
-    }
-
     .btn-lg-banner {
         visibility: hidden;
     }
 
+    .imagen-portada-responsive {
+        width: 100%;
+        height: 500px;
+        padding-top: 13%;
+    }
+
+    .banner-imagen {
+        width: 36.5%;
+        height: auto;
+        top: 33.5%;
+    }
+
     #encabezado {
         font-size: 4rem;
-        margin-left: 20%;
     }
 
     #texto-principal {
@@ -388,29 +580,29 @@ ion-icon:hover {
         font-weight: 500;
         text-align: justify;
         text-justify: inter-word;
-        width: 100%;
+        width: 85%;
     }
 
     .titulo-texto {
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 600;
         padding-bottom: 8%;
         text-align: center;
     }
 
     .vertical-line-texto {
-        height: 250px;
+        height: 220px;
         border-left: 4px solid #C1C936;
     }
 
     .btn-lg {
         font-weight: 600;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         transition: color 0.3s;
         transition: transform 0.3s;
-        margin-left: 22%;
         margin-top: 8%;
         margin-bottom: 2%;
+        margin-left: 18%;
         color: var(--clr-Texto-Logo);
     }
 
@@ -422,12 +614,10 @@ ion-icon:hover {
     .grid-container-aspectos {
         grid-template-columns: repeat(1, 2fr);
         justify-content: center;
-        
-        padding-right: 3%;
-        padding-left: 3%;
+        width: 100%;
     }
 
-    .imagen-aspectos{
+    .imagen-aspectos {
         width: 100%;
         height: 100%;
     }
@@ -441,7 +631,7 @@ ion-icon:hover {
         margin-top: 5%;
         margin-bottom: 20%;
     }
-    
+
     .card-text {
         padding-top: 5%;
         padding-bottom: 8%;
@@ -450,13 +640,13 @@ ion-icon:hover {
         font-size: 1rem;
         text-align: center;
     }
-    
+
     .tarjetas-fondo {
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
-    
+
     .grid-container {
         grid-template-columns: repeat(1, 4fr);
         grid-template-rows: auto;
@@ -466,7 +656,7 @@ ion-icon:hover {
         padding-right: 2%;
         padding-bottom: 11%;
     }
-    
+
     .grid-container img {
         width: 100%;
         border-radius: 15%;
@@ -474,18 +664,25 @@ ion-icon:hover {
 
     .container {
         background-color: var(--clr-Fondo);
-        width: fit-content;
+        width: 100%;
+        text-align: left;
+    }
+
+    .container-texto {
+        gap: 1%;
+        display: flex;
+    }
+
+    .texto-footer-responsive {
+        padding-bottom: 6%;
     }
 
     .container-footer-final {
         background-color: var(--clr-Texto-Logo);
         text-align: center;
         align-content: center;
-    }
-
-    .footer-brand {
-        width: 50%;
-        height: 10%;
+        font-size: 0.9rem;
+        width: 100%;
     }
 
     .texto-footer {
@@ -494,19 +691,43 @@ ion-icon:hover {
         font-size: 1.4rem;
         text-align: left;
     }
-    
-    .vertical-line {
-        height: 600px;
-        border-left: 2px solid white;
+
+    .texto-footer-responsive {
+        padding-bottom: 8%;
     }
-    
+
+    .vertical-line {
+        height: 1px;
+        border-left: 2px solid white;
+        visibility: hidden;
+    }
+
     .imagen-footer {
         width: 100%;
         height: 100%;
     }
-    
-    .redes-sociales {
-        margin-inline-end: 10%;
+
+    .imagen-footer-responsive {
+        width: 100%;
+        height: 100%;
     }
-    
+
+    .footer-brand {
+        width: 50%;
+        height: 10%;
+        margin-left: 27%;
+    }
+
+    .footer-responsive-text {
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .redes-sociales {
+        text-align: center;
+        justify-content: center;
+        margin-left: 15%;
+        margin-bottom: 8%;
+    }
 }
